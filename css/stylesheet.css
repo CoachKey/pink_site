@@ -1,0 +1,272 @@
+/* HEADER SECTION */
+body {
+    background: black;
+}
+
+.header {
+    width: 100%;
+    height: 90vh;
+    background-color: black;
+    background-image: url("header-img-2.jpg");
+    background-size: 64rem;
+    background-position: 90% 48%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header_bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10rem;
+}
+
+.header_logo {
+    height: 12rem;
+    width: auto;
+}
+
+.header_main_nav {
+    list-style: none;
+    display: flex;
+    margin: 5rem 2rem 0 0;
+    flex-wrap: wrap;
+    
+}
+
+h1, h2 {
+    color: white;
+}
+
+li { 
+    margin-left: 4rem;
+}
+
+/* Hover effect OVER nav bar */
+
+/* forcus on child elements under parent header_main_nav li a */
+.header_main_nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: block;
+    padding-bottom: 8px;
+ }
+
+a:hover, 
+a:active {
+    border-bottom: 2px solid darkorchid;
+}
+
+.header_box {
+    position: absolute;
+    top: 15rem;
+    left: 5rem;
+    text-align: left;
+}
+
+.header_textbox h1 {
+    font-size: 6rem;
+    color: darkorchid;
+}
+
+.header_textbox h2 {
+    font-size: 5rem;
+    width: 50%;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+
+/* GET A QUOTE BUTTON*/
+
+a.btn:link, a.btn:visited  {
+    width: 200px;
+    display: block;
+    text-transform: uppercase;
+    color: darkorchid;
+    background-color: white;
+    text-decoration: none;
+    padding: 1.6rem;
+    font-weight: 500;
+
+    background-size: 250%;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, darkorchid 50%);
+    transition:  all .4s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+a.btn:hover, a.btn:active {
+    background-position: 100%;
+    color: white;
+    transform: translatex(1rem);
+}
+
+/* OUR SERVICES SECTION */ 
+
+.section-header h2 {
+    color: darkorchid;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 1.2rem;
+    margin-top: 5px;
+}
+
+.section-header h1 {
+    color: grey;
+    font-size: 4.8rem;
+    text-transform: capitalize;
+    margin-bottom: 2.4rem;
+}
+
+
+.section-services {
+    text-align: center;
+    padding-bottom: 3rem 0 0 8rem;
+    background: white;
+    height: 940px;
+}
+
+
+.services {
+    display: flex;
+    margin: 0 6rem;
+    flex-wrap: wrap;
+   
+}
+
+.service-box {
+    background-color: lightgrey;
+    width: 20rem;
+    height: 3rem;
+    margin: 1rem;
+    flex: 1 1 20%;
+    color: black;
+    font-size: 2.4rem;
+    padding: 1rem 6rem 3rem 0;
+}
+
+.service-box:hover {
+    background-color: darkorchid;
+    color: white;
+}
+
+.service-box-title {
+    transform: translate(-1.6rem);
+    transition: all .5s;
+}
+
+.service-box-title:hover {
+    transform: translate(3rem);
+}
+
+/* MEET OUR TEAM */
+
+.section-teams {
+    text-align: center;
+    height: 1000px;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    flex-wrap: wrap;
+}
+
+.team-mates {
+    border-radius: 50%;
+    border: 3px solid darkorchid;
+    width: 24rem;
+    height: 24rem;
+    background-image: url(team-mate-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.team_mate--2 {
+    border-radius: 50%;
+    border: 3px solid darkorchid;
+    width: 24rem;
+    height: 24rem;
+    background-image: url(team-mate-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.team_mate--3 {
+    border-radius: 50%;
+    border: 3px solid darkorchid;
+    width: 24rem;
+    height: 24rem;
+    background-image: url(team-mate-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+ .name, .title {
+    color: white;
+    font-size: 30px;
+    font-weight: 300px;
+    margin-top: 290px;
+}
+
+.title {
+    margin-top: -30px;
+}
+
+/* POPULAR PROJECTS SECTION */
+
+.section-portfolio {
+    background-color: white;
+    text-align: center;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.porfolio_column {
+    flex-basis: 30%;
+    margin: 0.5rem;
+}
+
+.portfolio_image {
+    width: 100%;
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+
+.portfolio img {
+    width: 90%;
+    height: auto;
+    filter: saturate(0%) brightness(100%) contrast(100%);
+    transition: all .4s;
+}
+
+/* selecting a child element under a specific parent to style: .portfolio img:hover... so it doesn't style all images*/
+.portfolio img:hover {
+    filter: none;
+    transform: scale(1.25);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
